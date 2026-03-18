@@ -1,0 +1,57 @@
+﻿<Window x:Class="Rekenspel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rekenspel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="mainPanel">
+
+        <Border Background="lightgray"
+                CornerRadius="20"
+                Padding="30"
+                Width="450"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text=" 🧮Het Rekenspel🧮"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Foreground="DarkOliveGreen"
+                       Background="lightgray"   
+                       Margin="0,0,0,20"
+                       HorizontalAlignment="Right" />
+
+                <TextBlock x:Name="SumTB"
+                               FontSize="24"
+                               Height="50"
+                               Margin="0,0,0,15"
+                               HorizontalAlignment="Center" Width="180"
+                               Background="AliceBlue"/>
+
+                <TextBlock x:Name="ResultTB"
+                               FontSize="24"
+                               Height="50"
+                               Margin="0,0,0,15"
+                               HorizontalAlignment="Center" Width="150"
+                               Background="AliceBlue"><Run Language="nl-nl"/></TextBlock>
+                
+
+
+                <Button x:Name="newMathButton"
+                                       Content="nieuwe som"
+                                       FontSize="18"
+                                       Height="45"
+                                       Background="DarkOliveGreen"
+                                       Foreground="white"
+                                       Margin="0,0,0,15"
+                                        Click="newmathbutton_Click" />
+            </StackPanel>
+        </Border>
+
+
+    </Grid>
+
+</Window>
